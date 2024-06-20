@@ -375,7 +375,7 @@ if (isset($_GET['available'])) {?>
         </div>
         <div class="form-input">
             <label for="price">Price</label>
-            <input type="text" required value="<?= $info['price']; ?>" disabled>
+            <input type="text" required value="Ksh<?= $info['price']; ?>" disabled>
         </div>
         <div class="form-input">
             <label for="checkin">Check In</label>
@@ -388,7 +388,7 @@ if (isset($_GET['available'])) {?>
         <div class="form-group">
             <div class="form-input">
                 <label for="phone">Phone Number</label>
-                <input type="tel" placeholder="0712345678" required name="phone">
+                <input type="tel" placeholder="0712345678" maxlength="10" required name="phone">
             </div>
             <div class="form-input">
                 <label for="email">Email Address</label>
@@ -422,7 +422,7 @@ if (isset($_GET['available'])) {?>
                     <option value="">------</option>
                     <?php
                     while ($row = mysqli_fetch_assoc($resultDestination)) {
-                        echo "<option value='" . $row['DestinationName'] . "' data - price='" . $row['price'] . "'>" . $row['DestinationName'] . " - $" . $row['price'] . "</option>";
+                        echo "<option value='" . $row['DestinationName'] . "' data-price='" . $row['price'] . "'>" . $row['DestinationName'] . " - Ksh " . $row['price'] . "</option>";
                     }
                     ?>
                 </select>
