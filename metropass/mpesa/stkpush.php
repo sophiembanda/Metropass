@@ -15,7 +15,7 @@ $processrequestUrl = "https://sandbox.safaricom.co.ke/mpesa/stkpush/v1/processre
 $callbackurl = "http://your-live-site.com/metropass/mpesa/callback.php"; // <-- Modify this to your live callback URL
 
 // M-PESA credentials
-$passkey = "your_pass_key"; // <-- Modify this to your actual M-PESA passkey
+$passkey = "bfb279f9aa9bdbcf158e97dd71a467cd2e0c893059b10f78e6b72ada1ed2c919"; // <-- Modify this to your actual M-PESA passkey
 $BusinessShortCode = "174379";
 $TimeStamp = date('YmdHis');
 $password = base64_encode($BusinessShortCode . $passkey . $TimeStamp);

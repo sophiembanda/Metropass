@@ -2,8 +2,8 @@
 // accessToken.php
 
 function generateAccessToken() {
-    $consumerKey = 'your_consumer_key'; // Replace with your actual consumer key
-    $consumerSecret = 'your_consumer_secret'; // Replace with your actual consumer secret
+    $consumerKey = 'SW0N9yrV2wjqkGsj1FXOp8mKE6GvssNWNxLsehB6sB3DUUoF'; // Replace with your actual consumer key
+    $consumerSecret = 'z66zMO6gIH66Q9hGVfgmB2cjLjP6HSrFNXAMJQDHNuKms2wtyTeEUAhT5EHnydn4'; // Replace with your actual consumer secret
     $credentials = base64_encode("$consumerKey:$consumerSecret");
 
     $ch = curl_init('https://sandbox.safaricom.co.ke/oauth/v1/generate?grant_type=client_credentials');
